@@ -1,7 +1,5 @@
 #include <iostream>
-#include <algorithm>
-#include<vector>
-#include<string>
+#include<cmath>
 
 using namespace std;
 
@@ -12,13 +10,13 @@ int main() {
 	cout.tie(NULL);
 
 	bool tmp = true;
-	int n, cnt = 0;
+	long long n, cnt = 0;
 	cin >> n;
 	
 	int m = 1;
 
 	while (true) {
-		for (int i = 2; i < m; i++) {
+		for (int i = 2; i <= sqrt(m); i++) {
 			if (m % i == 0) {
 				tmp = false;
 				break;
